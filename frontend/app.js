@@ -1,8 +1,5 @@
-// During local development:
-let BASE_URL = "https://ab251c4b5230.ngrok-free.app";
-// When using ngrok, replace with your public URL, e.g.:
-// let BASE_URL = "https://<your-subdomain>.ngrok-free.app";
 
+let BASE_URL = "https://fd74b6fdb022.ngrok-free.app";
 const itemsList = document.getElementById("items");
 const form = document.getElementById("item-form");
 const statusEl = document.getElementById("status");
