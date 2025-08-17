@@ -1,10 +1,12 @@
 from pydantic import BaseModel
-class ItemBase(BaseModel):
+class ItemCreate(BaseModel):
     name: str
-class ItemCreate(ItemBase):
-    pass
-class Item(ItemBase):
+    description: str | None = None
+class ItemRead(BaseModel):
     id: int
+    name: str
+    description: str | None = None
     class Config:
         orm_mode = True
+
 

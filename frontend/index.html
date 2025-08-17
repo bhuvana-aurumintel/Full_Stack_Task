@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Items App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Items App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Items List</h1>
-    <ul id="items-list"></ul>
+  <main class="container">
+    <h1>Items</h1>
 
-    <h2>Add Item</h2>
     <form id="item-form">
-        <input type="text" id="item-name" placeholder="Enter item name" required>
-        <button type="submit">Add</button>
+      <input type="text" id="name" placeholder="Item name" required />
+      <input type="text" id="description" placeholder="Description (optional)" />
+      <button type="submit">Add</button>
     </form>
 
-    <script src="script.js"></script>
+    <section id="status" class="status"></section>
+
+    <ul id="items" class="items"></ul>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
+
